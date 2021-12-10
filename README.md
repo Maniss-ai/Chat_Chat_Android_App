@@ -8,6 +8,8 @@
 <table>
   <tr>
     <td align="left">Login Screen</td>
+    <td></td>
+    <td></td>
      <td align="right">Register Screen</td>
   </tr>
   <tr>
