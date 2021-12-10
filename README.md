@@ -5,15 +5,9 @@
   <img src="ScreenShots/13.jpeg" width="300" height="500" />
 </p>
 
-<table>
-  <tr>
-    <td align="left">Login Screen</td>
-    <td></td>
-    <td></td>
-     <td align="right">Register Screen</td>
-  </tr>
-  <tr>
-    <td align="left"><img src="ScreenShots/12.jpeg" width=270 height=480></td>
-    <td align="right"><img src="ScreenShots/11.jpeg" width=270 height=480></td>
-  </tr>
- </table>
+<p float="left">
+  <img src="ScreenShots/12.jpeg" width="100" />
+  <img src="ScreenShots/11.jpeg" width="100" /> 
+  <img src="/img3.png" width="100" />
+</p>
+
