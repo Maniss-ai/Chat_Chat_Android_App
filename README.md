@@ -10,7 +10,7 @@
     <h1> Login <h1/>
     <img src="ScreenShots/12.jpeg" width="300" height="500">
   </p>
-  <p>
+  <p align = "right">
     <h1> Register <h1/>
     <img src="ScreenShots/11.jpeg" width="300" height="500">
   </p>
