@@ -11,8 +11,8 @@
      <td>Register</td>
   </tr>
   <tr>
-    <td><p align = "left"><img src="ScreenShots/12.jpeg" width=270 height=480></p></td>
-    <td><p align = "right"><img src="ScreenShots/11.jpeg" width=270 height=480></p></td>
+    <td><p float = "left"><img src="ScreenShots/12.jpeg" width=270 height=480></p></td>
+    <td><p float = "right"><img src="ScreenShots/11.jpeg" width=270 height=480></p></td>
   </tr>
  </table>
 
