@@ -5,8 +5,14 @@
   <img src="ScreenShots/13.jpeg" width="300" height="500" />
 </p>
 
-<p>
-<img src="ScreenShots/12.jpeg" width="300" height="500">
-<img align="right" src="ScreenShots/11.jpeg" width="300" height="500">
+<p align = "center">
+  <p>
+    <h1> Login <h1/>
+    <img src="ScreenShots/12.jpeg" width="300" height="500">
+  </p>
+  <p>
+    <h1> Register <h1/>
+    <img src="ScreenShots/11.jpeg" width="300" height="500">
+  </p>
 </p>
 
