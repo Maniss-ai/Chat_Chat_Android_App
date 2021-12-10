@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Login"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/pitbull_dog_logo" />
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_below="@id/logoImageView"
+        android:layout_width="300dp"
+        android:layout_marginTop="-20dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:transitionName="logo_text"
+        android:text="@string/greeting_text"
+        android:textSize="36sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/signInTextView"
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoTextView"
+        android:fontFamily="@font/antic"
+        android:transitionName="sign_up_in"
+        android:text="@string/sign_in_to_continue"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progressBar"
+            style="@style/SpinKitView.Large.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#42DDB1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/logoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameEditTextLayout"
+            android:layout_width="match_parent"
+            android:transitionName="username"
+            android:layout_height="wrap_content"
+            android:hint="@string/Username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="password"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text=""
+                android:drawableStart="@drawable/ic_password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/forgetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/forget_password"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:elevation="0dp"/>
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go"
+            android:layout_marginTop="5dp"
+            android:transitionName="go_button"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#000" />
+
+        <Button
+            android:id="@+id/newAccountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/new_user_sign_up"
+            android:transitionName="account"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:elevation="0dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
